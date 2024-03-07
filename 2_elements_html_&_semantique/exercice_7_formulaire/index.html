@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <style>
+        html {
+            background-color: aliceblue;
+        }
+
+        div {
+            margin: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Questionnaire personnel</h1>
+    </header>
+    <main>
+        
+        <form action="">
+            <div>
+                <label for="name">Nom* :</label>
+                <input type="text" id="name" name="nom" required>
+            </div>
+            <div>
+                <label for="surname">Prénom* :</label>
+                <input type="text" id="surname" name="prenom" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe* :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="email">Adresse mél* :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+            <div>
+                <label for="date">Date de naissance :</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="color">Couleur préférée :</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <label for="country">Pays préféré :</label>
+                <input list="pays-liste" id="country" name="country">
+                <datalist id="pays-liste">
+                    <option value="France"></option>
+                    <option value="Angleterre"></option>
+                    <option value="Espagne'"></option>
+                    <option value="Italie"></option>
+            </div>
+            <div>
+                <label for="choix">Statut : </label>
+                <select name="choix">
+                    <option value="chomeur.se">Chomeur.se</option>
+                    <option value="salarie.e">Salarié.e</option>
+                    <option value="etudiant.e">Etudiant.e</option>
+                </select>
+            </div>
+            <div>
+                <label for="children">Enfants à charges :</label>
+                <input type="number" id="children" name="children">
+            </div>
+            <div>
+                <label for="website">Site web personnel :</label>
+                <input type="url" id="website" name="website">
+            </div>
+            <div>
+                <label for="satisfaction">Niveau de satisfaction (0 à 5):</label>
+                <input type="range" min="0" max="5" id="satisfaction" name="satisfaction">
+            </div>
+            <div>
+
+                <fieldset>
+                    <legend>Genre :</legend>
+                    <label for="homme">Homme<input type="radio" id="homme" name="homme"></label>
+                    <label for="femme">Femme<input type="radio" id="femme" name="femme"></label>
+                    <label for="enby">N-B<input type="radio" id="enby" name="enby"></label>
+                </fieldset>
+            </div>
+            <div>
+                <input type="checkbox" id="form" name="form">
+                <label for="form">Je suis passionné.e par les formulaires</label>
+
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Compétences :</legend>
+                    <label for="">HTML5<input type="checkbox" id="" name=""></label>
+                    <label for="">CSS<input type="checkbox" id="" name=""></label>
+                    <label for="">javascript<input type="checkbox" id="" name=""></label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="cv">CV :</label>
+                <input type="file" id="cv" name="cv">
+            </div>
+            <div>
+                <label for="comments">Commentaire :</label>
+                <textarea name="comments" id="" cols="30" rows="10" placeholder="Votre commentaire ici..."></textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+html {
+    background-color: azure;
+}
+
+body {
+    width: 660px;
+    margin: 0 auto;
+}
+
+.bulletLess {
+    list-style: none; 
+    line-height: 30px;
+
+}
